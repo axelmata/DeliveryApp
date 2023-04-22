@@ -1,9 +1,7 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-
-.header{
-
+.header {
     display: flex;
     flex-direction: column;
     padding: v.$separacion 0;
@@ -11,15 +9,14 @@
     @include m.desktop { 
         flex-direction: row;
         justify-content: space-between;
+        
     }
 
-    &__logo{
+    &__logo {
         width: 30rem;
         margin-bottom: 5rem;
         @include m.desktop { 
-            margin-bottom: 0;
+            margin-bottom:0;
         }
     }
-
-
 }
